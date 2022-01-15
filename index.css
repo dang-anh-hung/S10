@@ -1,0 +1,84 @@
+:root{
+    background-image: linear-gradient(to bottom,white,yellow,orange);
+    --text-color: brown;
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 80%;
+    border: 3px solid var(--text-color);
+    margin: 15px auto;
+    background-color: lightblue;
+    box-shadow: 5px 8px 8px black;
+    border-radius: 5px;
+}
+.menu{
+    list-style-type: none;
+    display: none;
+}
+
+.name{
+    color: var(--text-color);
+}
+hr{
+    height: 3px;
+    background-color: var(--text-color);
+}
+
+header{
+    background-image: linear-gradient(to left bottom, brown,white,brown);
+    height: 5%;
+    border-bottom: 3px solid var(--text-color);
+    padding :10px 0 15px 0;
+    display: flex;
+    justify-content: flex-start;
+}
+header>img{
+    height: 100px;
+    margin: 0 30px;
+}
+header h2{
+    color: var(--text-color);
+}
+header span{
+    text-shadow: 3px 1px brown;
+}
+main{
+    padding:  0 30px;
+    display: flex;
+    flex-direction: row-reverse;
+}
+article{
+   display: flex;
+   flex-direction: row;
+}
+article h4{
+    margin: unset;
+}
+.intro{
+    width: 70%;
+}
+.authors{
+    width: 30%;
+    padding: 0 30px;
+}
+
+article img{
+    height: 100px!important;
+    width: 100px;
+}
+main img,a{
+    height: 80px;
+    color: blue;
+    font-size: 1rem;
+}
+
+footer{
+    height: 50px;
+    background-color: var(--text-color);
+    color: white;
+    text-align: center;
+}
+
+
