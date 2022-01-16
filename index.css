@@ -1,84 +1,84 @@
 :root{
-    background-image: linear-gradient(to bottom,white,yellow,orange);
+    background-image: linear-gradient(to bottom,white,orange,brown);
     --text-color: brown;
     font-size: 20px;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
-body{
+.container{
     width: 80%;
-    border: 3px solid var(--text-color);
+    height: 100%;
     margin: 15px auto;
-    background-color: lightblue;
-    box-shadow: 5px 8px 8px black;
-    border-radius: 5px;
+    border: 3px solid var(--text-color);
+    border-radius: 20px;
+    box-shadow: 3px 5px 7px black;
+
 }
-.menu{
-    list-style-type: none;
+.container__menu{
     display: none;
 }
-
-.name{
-    color: var(--text-color);
+a{
+    color: blue;
+}
+img{
+    height: 100px;
 }
 hr{
-    height: 3px;
     background-color: var(--text-color);
+    height: 3px;
 }
-
-header{
-    background-image: linear-gradient(to left bottom, brown,white,brown);
-    height: 5%;
-    border-bottom: 3px solid var(--text-color);
-    padding :10px 0 15px 0;
-    display: flex;
-    justify-content: flex-start;
-}
-header>img{
-    height: 100px;
-    margin: 0 30px;
-}
-header h2{
+.title{
     color: var(--text-color);
 }
-header span{
-    text-shadow: 3px 1px brown;
+header{
+    height: 5%;
+    background-image: linear-gradient(to right bottom, white,pink,red);
+    display: flex;
+    justify-content: space-around;
+    border-radius: 20px 20px 0 0;
+}
+.header__title  span{
+    text-shadow: 2px 4px 1px red;
+}
+.header__icon{
+    margin-top: 15px;
 }
 main{
-    padding:  0 30px;
+    padding: 0 15px;
     display: flex;
     flex-direction: row-reverse;
+    background-color: lightblue;
+    justify-content: space-evenly;
 }
-article{
-   display: flex;
-   flex-direction: row;
-}
-article h4{
-    margin: unset;
-}
-.intro{
+.main__introduce{
     width: 70%;
 }
-.authors{
+.main__speakers{
     width: 30%;
-    padding: 0 30px;
+    padding-right: 30px;
 }
-
-article img{
-    height: 100px!important;
-    width: 100px;
+.introduce__threads{
+    display: flex;
 }
-main img,a{
-    height: 80px;
-    color: blue;
-    font-size: 1rem;
+.introduce__threads--scott{
+    width: 65%;
 }
-
+.introduce__threads--img{
+    width: 35%;
+}
+.introduce__threads--img > img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
 footer{
-    height: 50px;
-    background-color: var(--text-color);
-    color: white;
+    height: 5%;
     text-align: center;
+    background-color: var(--text-color);
+    padding: 1px 0;
+    border-radius: 0 0 20px 20px;
 }
-
-
+footer > p{
+    color: white;
+}
